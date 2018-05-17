@@ -26,6 +26,25 @@
 </div>
 
 
+<input type="text" [(ngModel)]="inputContent">
+<div>
+  {{inputContent}}
+</div>
+
+
+
+<button
+  (click)="toogle()"
+  (mouseover)="demo($event)"
+  [disabled] ="klikkeljunke"
+
+
+>TOGGLE</button>
+
+
+
+
+
 <div [ngClass]="{'valami': show}">
   <p>
     ng class
@@ -33,12 +52,6 @@
   </p>
 </div>
 
-<button
-  (click)="toogle()"
-   (mouseover)="demo($event)"
-
-
->TOGGLE</button>
   <app-event></app-event>
 <app-alma></app-alma>
 
