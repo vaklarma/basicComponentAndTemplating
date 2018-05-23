@@ -1,64 +1,67 @@
+<app-listdemo></app-listdemo>
+
+
 <!--The content below is only a placeholder and can be replaced.-->
 
-<h3>ez átszíneződik??</h3>
-<h4>ezt kommitolom</h4>
+<!--<h3>ez átszíneződik??</h3>-->
+<!--<h4>ezt kommitolom</h4>-->
 
-<ul>
-  <li> sziget</li>
-  <li> sziget_01</li>
-  <li> sziget_02</li>
-  <li> sziget_03</li>
-</ul>
+<!--<ul>-->
+  <!--<li> sziget</li>-->
+  <!--<li> sziget_01</li>-->
+  <!--<li> sziget_02</li>-->
+  <!--<li> sziget_03</li>-->
+<!--</ul>-->
 
-<ul>
+<!--<ul>-->
 
-  <li *ngFor="let event of events">
-
-
-    {{event}}
-  </li>
+  <!--<li *ngFor="let event of events">-->
 
 
-</ul>
-<hr>
-{{ title | uppercase }}
-<hr>
-
-<hr>
-{{ pipeDemo | json }}
-<hr>
-
-<div *ngIf="show">
-<p>Makkmarci</p>
-</div>
+    <!--{{event}}-->
+  <!--</li>-->
 
 
-<input type="text" [(ngModel)]="inputContent">
-<div>
-  {{inputContent}}
-</div>
+<!--</ul>-->
+<!--<hr>-->
+<!--{{ title | uppercase }}-->
+<!--<hr>-->
+
+<!--<hr>-->
+<!--{{ pipeDemo | json }}-->
+<!--<hr>-->
+
+<!--<div *ngIf="show">-->
+<!--<p>Makkmarci</p>-->
+<!--</div>-->
 
 
-
-<button
-  (click)="toogle()"
-  (mouseover)="demo($event)"
-  [disabled] ="klikkeljunke"
-
-
->TOGGLE</button>
+<!--<input type="text" [(ngModel)]="inputContent">-->
+<!--<div>-->
+  <!--{{inputContent}}-->
+<!--</div>-->
 
 
 
+<!--<button-->
+  <!--(click)="toogle()"-->
+  <!--(mouseover)="demo($event)"-->
+  <!--[disabled] ="klikkeljunke"-->
 
 
-<div [ngClass]="{'valami': show}">
-  <p>
-    ng class
+<!--&gt;TOGGLE</button>-->
 
-  </p>
-</div>
 
-  <app-event></app-event>
-<app-alma></app-alma>
+
+
+
+<!--<div [ngClass]="{'valami': show}">-->
+  <!--<p>-->
+    <!--ng class-->
+
+  <!--</p>-->
+<!--</div>-->
+
+  <!--<app-event></app-event>-->
+<!--<app-alma></app-alma>-->
 
