@@ -1,4 +1,4 @@
-<img [src]="valamiXss">
+<input type="text" #xssattack><button (click)="xss(xssattack)">xssgomb</button>
 
 
 <ul>
@@ -13,10 +13,19 @@
 
 
 </ul>
+<div>
+<label for="eventname">Új esemény neve</label>
+<input type="text" #newEventNameInput id="eventname">
+</div>
 
-<input type="text" #newEventNameInput>
-<button (click)="add(newEventNameInput)">SAVE</button>
-<pre>
+<div>
+  <label for="eventpic">Új eseményhez tartóző kép</label>
+  <input type="text" #newEventPicInput id="eventpic">
+</div>
+<button (click)="add(newEventNameInput, newEventPicInput)">SAVE</button>
+
+
+  <pre>
   {{events | json}}
 </pre>
 

@@ -47,8 +47,9 @@ this.events = [
 console.log(puf);
 
   }
-add(newEventNameInput: HTMLInputElement) {
+add(newEventNameInput: HTMLInputElement, newEventPicInput: HTMLInputElement) {
     console.log(newEventNameInput.value);
+  console.log(newEventPicInput.value);
 
 
      // this.events = [...this.events, {
@@ -58,13 +59,18 @@ add(newEventNameInput: HTMLInputElement) {
   //   pic: 'linkakephez '
   // }];
 const maxId = this.events.reduce((x,y) => x.id > y.id ? x : y).id;
-  this.events = [...this.events, new EventModel(maxId + 1, newEventNameInput.value , 'linkakephez')];
+  this.events = [...this.events, new EventModel(maxId + 1, newEventNameInput.value , newEventPicInput.value)];
 
 
   newEventNameInput.value = '';
+  newEventPicInput.value = '';
 }
 delete (id: number) {
     this.events = this.events.filter( (ev: EventModel) => ev.id !== id);
 }
+xss(xssattack: HTMLInputElement){
 
+    console.log(xssattack.value);
+
+}
 }
